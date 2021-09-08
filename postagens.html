@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Framework - Postagens</title>
+    <link rel="icon" href="./assets/post.png" type="image/png">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <a href="index.html"><img src="./assets/home.png" alt="Home" id="imgHome"></a>
+            <h2>POSTAGENS</h2>
+        </div>
+        <table class="cell-border" id="tabelaPostagens">
+            <thead>
+                <th>UserId</th>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Body</th>
+            </thead>
+        </table>
+    </div>
+    <script src="./js/postagens.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./css/page-style.css">
+    <script>
+        $(document).ready( function () {
+            $('#tabelaPostagens').DataTable({
+                "language": {
+                    "lengthMenu": "Mostrando _MENU_ registros por página",
+                    "zeroRecords": "Nada encontrado",
+                    "info": "Mostrando a página _PAGE_ de _PAGES_",
+                    "infoEmpty": "Nenhum registro disponível",
+                    "infoFiltered": "(filtrado de _MAX_ registros no total)"
+                }
+            });
+        });
+    </script>
+</body>
+</html>

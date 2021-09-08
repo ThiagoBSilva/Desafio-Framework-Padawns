@@ -1,0 +1,22 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    display: inline-block;
+}
+
+#container{
+    width: 80%;
+    margin: auto;
+}
+
+#header{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: lightgray;
+}
+
+#imgHome{
+    float: left;
+}
